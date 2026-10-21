@@ -74,10 +74,15 @@ node test/engine-ui.test.js
 
 ## How this was made
 
-This project was built by a team of AI agents working in parallel, then checked and fixed by a
-second wave of agents. The whole thing was driven from a single prompt:
+This project was built with **yAI**, a coding agent I designed and built. yAI ran a team of AI
+agents in parallel, then checked and fixed the result with a second wave of agents. The whole
+thing was driven from a single prompt:
 
 > make a minecraft style game runnable in .html. Make it as similar to minecraft as possible
+
+I designed the agent orchestration — the role split, the hand-off contracts between agents, and
+the review-and-fix loop — and yAI executed it end to end: writing the code, running the checks,
+reading the reports back, and fixing what the checkers found.
 
 ### Phase 1 — four builders in parallel
 
